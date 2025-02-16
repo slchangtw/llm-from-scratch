@@ -1,6 +1,7 @@
 import torch
-from evaluation import calc_loss_batch, evaluate_model
-from utils import generate_text_simple, text_to_token_ids, token_ids_to_text
+
+from .evaluation import calc_loss_batch, evaluate_model
+from .utils import generate_text_simple, text_to_token_ids, token_ids_to_text
 
 
 def generate_and_print_sample(model, tokenizer, device, start_context):
